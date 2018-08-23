@@ -1,0 +1,248 @@
+/*******************************************************************
+* banner
+********************************************************************/
+.banner {
+	width: 100%;
+	/* height: 7.05rem; */
+	position: relative;
+}
+
+.banner .swiper-container-banner .item {
+	height: 7.06rem;
+}
+
+.banner img {
+	width: 100%;
+	position: absolute;
+	z-index: -1;
+}
+
+.banner .txt {
+	position: absolute;
+	top: 50%;
+	padding-left: 0.2rem;
+	transform: translateY(-50%);
+	left: .45rem;
+}
+
+.banner .txt h4 {
+	font-size: .52rem;
+	color: #fff;
+	font-weight: bold;
+	padding-bottom: .65rem;
+	line-height: 1.7;
+}
+.banner .txt h4 span{
+	color: #ff6200;
+}
+.banner p {
+	font-size: .3rem;
+	color: #fff;
+	padding-bottom: 1.28rem;
+}
+
+.banner .txt a {
+	width: 2.4rem;
+	height: .68rem;
+	line-height: .68rem;
+	display: inline-block;
+	border-radius: .68rem;
+	background-color: #ff6200;
+	font-size: .3rem;
+	color: #fff;
+	margin-bottom: .7rem;
+	text-align: center;
+}
+
+.banner .swiper-container-banner .swiper-pagination-bullet {
+	background: #fff;
+}
+
+.banner .swiper-banner-bottom {
+	height: 1.96rem;
+	background-color: #0f1621;
+}
+
+.banner .swiper-banner-bottom .item {
+	display: block;
+	margin: 0 auto;
+	color: #fff;
+	text-align: center;
+	line-height: 1;
+}
+
+.banner .swiper-banner-bottom .item b {
+	display: block;
+	font-size: .3rem;
+	margin: .33rem auto .2rem;
+}
+
+.banner .swiper-banner-bottom .item span {
+	width: 3.2rem;
+	display: inline-block;
+	font-size: .26rem;
+	line-height: .46rem;
+}
+
+.banner .swiper-banner-bottom .swiper-button {
+	width: .21rem;
+	height: .41rem;
+	background: url(../images/all_icon.png) -.53rem 0 no-repeat;
+	background-size: 28.4rem 2.76rem;
+	bottom: .81rem;
+	top: auto;
+}
+
+.banner .swiper-banner-bottom .swiper-button-prev {
+	left: .78rem;
+}
+
+.banner .swiper-banner-bottom .swiper-button-next {
+	background-position-x: -1.18rem;
+	right: .78rem;
+}
+
+.b1 {
+	height: 4.3rem;
+}
+
+.b1 .item .img-box {
+	/* width: 6.6rem; */
+	height: 3.6rem;
+	display: block;
+	margin: .4rem auto 0;
+	border-radius: .15rem;
+	-webkit-box-shadow: 1px 1px 18px rgba(0,0,0,.5); 
+    -moz-box-shadow: 1px 1px 18px rgba(0,0,0,.5); 
+	box-shadow: 1px 1px 18px rgba(0,0,0,.5);
+	overflow: hidden;
+}
+
+.b1 .item .img-box img {
+	width: 100%;
+	height: 100%;
+}
+
+.b2 {
+	background-color: #151f2f;
+	padding: .56rem 0 .88rem;
+}
+
+.b2 h4 {
+	font-size: .34rem;
+	color: #fff;
+	line-height: 1;
+	margin-bottom: .76rem;
+}
+
+.b2 .b2-content {
+	width: 6.6rem;
+	display: block;
+	margin: 0 auto;
+}
+
+.b2 .b2-content h4 {
+	font-size: .34rem;
+	color: #fff;
+	line-height: 1;
+	margin-bottom: .76rem;
+}
+
+
+.b2 .b2-content .ul-nav {
+	font-size: 0;
+	padding-bottom: .38rem;
+	border-bottom: 1px solid #535d6c; 
+}
+
+.b2 .b2-content .ul-nav li {
+	width: 24.5%;
+	color: #dedede;
+	font-size: .28rem;
+	text-align: center;
+	display: inline-block;
+	border-left: 1px solid #e5e5e5;
+}
+.b2 .b2-content .ul-nav li:first-child {
+	border-left: none;
+}
+.b2 .b2-content .ul-nav li.active {
+	color: #ff6200;
+}
+
+.b2 .b2-content .ul-content ul {
+	display: none;
+}
+.b2 .b2-content .ul-content ul:first-child {
+	display: block;
+}
+
+.b2 .b2-content .ul-content ul li {
+	padding: .4rem 0 .64rem;
+	border-bottom: 1px solid #535d6c;
+	line-height: 1; 
+}
+
+.b2 .b2-content .ul-content ul li a span {
+	color: #bfbfc1;
+	font-size: .24rem;
+	display: block;
+	margin-bottom: .28rem;
+}
+.b2 .b2-content .ul-content ul li a b {
+	font-size: .28rem;
+	color: #fff;
+	display: block;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.b2 .b2-content .more-a {
+	width: 4.65rem;
+	height: .68rem;
+	line-height: .68rem;
+	border-radius: .25rem;
+	font-size: .28rem;
+	color: #ff6200;
+	text-align: center;
+	border: 1px solid #ff6200;
+	display: block;
+	margin: .58rem auto 0;
+}
+
+.b3 {
+	padding-top: .92rem;
+	text-align: center;
+	background: url(../images/b3_bg.png) no-repeat bottom;
+}
+
+.b3 h4 {
+	font-weight: bold;
+	font-size: .4rem;
+	color: #333;
+}
+
+.b3 p {
+	margin: .38rem auto .74rem;
+	font-size: .24rem;
+	color: #666;
+}
+
+.b3 .download-a {
+	width: 3.56rem;
+	height: .68rem;
+	line-height: .68rem;
+	display: block;
+	margin: 0 auto .87rem;
+	font-size: .28rem;
+	color: #fff;
+	background-color: #ff6200;
+	border-radius: .68rem;
+}
+
+.b3 img {
+	width: 6.44rem;
+	display: block;
+	margin: 0 auto;
+}

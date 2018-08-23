@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, viewport-fit=cover">
+        <meta content="telephone=no" name="format-detection" />
+        <title>Index</title>
+        <link rel="stylesheet" href="./css/swiper.min.css">
+        <link rel="stylesheet" href="./css/common.css">
+        <link rel="stylesheet" href="./css/index.css">
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    
+        <script src="./js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+        <script type="text/javascript">
+            function size() {
+                var width = $(window).width();
+                if (width > 750) {
+                    $('html').css('font-size', function () {
+                        return 100;
+                    });
+                    return;
+                } else {
+                    $('html').css('font-size', function () {
+                        return 100 * width / 750;
+                    });
+                }
+            }
+            size();
+            $(window).resize(function () {
+                size();
+            });
+        </script>
+        <script type='text/javascript'>
+            (function(m, ei, q, i, a, j, s) {
+                m[i] = m[i] || function() {
+                    (m[i].a = m[i].a || []).push(arguments)
+                };
+                j = ei.createElement(q),
+                    s = ei.getElementsByTagName(q)[0];
+                j.async = true;
+                j.charset = 'UTF-8';
+                j.src = 'https://static.meiqia.com/dist/meiqia.js?_=t';
+                s.parentNode.insertBefore(j, s);
+            })(window, document, 'script', '_MEIQIA');
+            _MEIQIA('entId', '113906');
+            _MEIQIA('withoutBtn');
+        </script>
+        <script>
+             function to_wap() {
+                 var host = window.location.host;
+                 var yu = host.split('.');
+                 var domain=host.replace(yu[0]+'.','');
+                 var url = window.location.pathname;
+                 var search = window.location.search;
+    
+                 if (Is_PC()) {
+                     // console.log("http://www."+domain + url + search)
+                     window.location.href = "http://www."+domain + url + search;
+                 }
+             }
+    
+             function Is_PC(){
+                 var userAgentInfo = navigator.userAgent;
+                 var Agents = new Array("Android", "iPhone", "SymbianOS", "Windows Phone", "iPad", "iPod");
+                 var flag = true;
+                 for(var v = 0; v < Agents.length; v++){
+                     if(userAgentInfo.indexOf(Agents[v]) > 0){
+                         flag = false;
+                         break;
+                     }
+                 }
+                 return flag;
+             }
+             to_wap();
+        </script>
+    </head>
+<body>
+    <header>
+        <div class="header-fixed">
+            <div class="header clearfix">
+                <div class="fl">
+                    <a href="" class="btn logo">
+                        <img src="./images/logo.png">
+                    </a>
+                    <i></i>
+                    <p>
+                        <span class="span-en">Nasdaq Index</span>
+                        <span class="span-zh">纳斯达克指数</span>
+                    </p>
+                </div>
+                <a href="javascript:;" class="btn menu"></a>
+            </div>
+        </div>
+        <div class="menu-bg"></div>
+        <div class="menu-content">
+            <ul class="menu-list">
+                <li class="item">
+                    <a href="" class="link">注册</a>
+                </li>
+                <li class="item">
+                    <a href="" class="link">投行观点</a>
+                </li>
+                <li class="item">
+                    <a href="" class="link">时事热点</a>
+                </li>
+                <li class="item">
+                    <a href="" class="link">经济数据</a>
+                </li>
+                <li class="item">
+                    <a href="" class="link">专家点评</a>
+                </li>
+            </ul>
+        </div>
+        <script type="text/javascript">
+            // menu
+            $(".header .menu").click(function (e) {
+                e.stopPropagation();
+                if ($(".menu-content").hasClass("open-menu")) {
+                    $(".menu-content").removeClass("open-menu");
+                    $(".menu-bg").hide();
+                } else {
+                    $(".menu-bg").show();
+                    $(".menu-content").addClass("open-menu");
+                }
+    
+            })
+            $(".menu-list .item").each(function (index) {
+                $(this).css({ 'animation-delay': (index / 10) + 's' });
+            });
+    
+            $(".menu-list .link").click(function (e) {
+                e.stopPropagation();
+    
+                $(this).toggleClass("link-open");
+                $(this).siblings(".sub-list").slideToggle();
+            })
+    
+            $(".menu-content").click(function (e) {
+                e.stopPropagation();
+            })
+            
+            $(".menu-bg").click(function () {
+                if ($(".menu-content").hasClass("open-menu")) {
+                    $(".menu-content").removeClass("open-menu");
+                }
+                $(this).hide();
+            })
+            $(".menu-bg").on("touchstart",function () {
+                $(this).hide();
+                $(".menu-content").removeClass("open-menu");
+            })
+        </script>
+    </header>
+    <div class="content content-box">
+        <div class="banner">
+            <div class="swiper-container swiper-container-banner">
+                <div class="swiper-wrapper">
+                    <div class="item swiper-slide">
+                        <img src="./images/banner.jpg" alt="">
+                        <div class="txt">
+                            <h4>新加坡富时A50指数 </h4>
+                            <p>指数行业丰富经验，助您收益不费力</p>
+                            <a href="">立即开户</a>
+                        </div>
+                    </div>
+                    <div class="item swiper-slide">
+                        <img src="./images/banner.jpg" alt="">
+                        <div class="txt">
+                            <h4>新加坡富时A50指数 </h4>
+                            <p>指数行业丰富经验，助您收益不费力</p>
+                            <a href="">立即开户</a>
+                        </div>
+                    </div>
+                    <div class="item swiper-slide">
+                        <img src="./images/banner.jpg" alt="">
+                        <div class="txt">
+                            <h4>新加坡富时A50指数 </h4>
+                            <p>指数行业丰富经验，助您收益不费力</p>
+                            <a href="">立即开户</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <div class="swiper-banner-bottom">
+                <div class="swiper-wrapper">
+                    <div class="item swiper-slide">
+                        <b>产品丰富</b>
+                        <span>全球6大热门股票指数期货产品低门槛双向交易</span>
+                    </div>
+                    <div class="item swiper-slide">
+                        <b>移动交易</b>
+                        <span>全球领先随时随地，一键轻松享受投资乐趣</span>
+                    </div>
+                    <div class="item swiper-slide">
+                        <b>存取便捷</b>
+                        <span>安全高效即时到账出金申请到银行审核出账最快2小时</span>
+                    </div>
+                    <div class="item swiper-slide">
+                        <b>尊贵服务</b>
+                        <span>专属客户经理，为您服务实时交易信号，第一时间送达</span>
+                    </div>
+                </div>
+                <div class="swiper-button swiper-button-prev"></div>
+                <div class="swiper-button swiper-button-next"></div>
+            </div>
+        </div>
+        <div class="b1">
+            <div class="swiper-b1">
+                <div class="swiper-wrapper">
+                    <div class="item swiper-slide">
+                        <div class="img-box">
+                            <img src="./images/Dow.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="item swiper-slide">
+                        <div class="img-box">
+                            <img src="./images/DAX.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="item swiper-slide">
+                        <div class="img-box">
+                            <img src="./images/FTSE.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="item swiper-slide">
+                        <div class="img-box">
+                            <img src="./images/HANGSENG.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="item swiper-slide">
+                        <div class="img-box">
+                            <img src="./images/NAS.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="item swiper-slide">
+                        <div class="img-box">
+                            <img src="./images/Poors.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="b2">
+            <div class="b2-content">
+                <h4>每日市场分析</h4>
+                <ul class="ul-nav">
+                    <li class="active">投行观点</li>
+                    <li>时事热点</li>
+                    <li>经济数据</li>
+                    <li>专家点评</li>
+                </ul>
+                <div class="ul-content">
+                    <ul>
+                        <li>
+                            <a href="javascript:;">
+                                <span>Nov 20, 2018</span>
+                                <b>法国兴业银行：美联储今年加息4次几率大增</b>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <span>Nov 20, 2018</span>
+                                <b>法国兴业银行：美联储今年加息4次几率大增</b>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <span>Nov 20, 2018</span>
+                                <b>法国兴业银行：美联储今年加息4次几率大增</b>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <span>Nov 20, 2018</span>
+                                <b>法国兴业银行：美联储今年加息4次几率大增</b>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="javascript:;">
+                                <span>Nov 20, 2018</span>
+                                <b>222法国兴业银行：美联储今年加息4次几率大增</b>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <span>Nov 20, 2018</span>
+                                <b>法国兴业银行：美联储今年加息4次几率大增</b>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <span>Nov 20, 2018</span>
+                                <b>法国兴业银行：美联储今年加息4次几率大增</b>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <span>Nov 20, 2018</span>
+                                <b>法国兴业银行：美联储今年加息4次几率大增</b>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="javascript:;">
+                                <span>Nov 20, 2018</span>
+                                <b>3333法国兴业银行：美联储今年加息4次几率大增</b>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <span>Nov 20, 2018</span>
+                                <b>法国兴业银行：美联储今年加息4次几率大增</b>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <span>Nov 20, 2018</span>
+                                <b>法国兴业银行：美联储今年加息4次几率大增</b>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <span>Nov 20, 2018</span>
+                                <b>法国兴业银行：美联储今年加息4次几率大增</b>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="javascript:;">
+                                <span>Nov 20, 2018</span>
+                                <b>44444法国兴业银行：美联储今年加息4次几率大增</b>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <span>Nov 20, 2018</span>
+                                <b>法国兴业银行：美联储今年加息4次几率大增</b>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <span>Nov 20, 2018</span>
+                                <b>法国兴业银行：美联储今年加息4次几率大增</b>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <span>Nov 20, 2018</span>
+                                <b>法国兴业银行：美联储今年加息4次几率大增</b>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <a href="javascript:;" class="more-a">查看更多</a>
+            </div>
+        </div>
+        <div class="b3">
+            <h4>开始指数交易</h4>
+            <p>注册Globalidx账户  马上开始指数交易</p>
+            <a href="javascript:;" class="download-a">下载 Globalidx Trader</a>
+            <img src="./images/b3_img.png" alt="">
+        </div>
+    </div>
+    <script>
+        $(function () {
+            var swiperBanner = new Swiper('.swiper-container-banner', {
+                loop: true,
+                autoplay: 5000,
+                observer:true,
+                observeParents:true,
+                pagination: '.swiper-pagination',
+            });
+            var swiperBannerBottom = new Swiper('.swiper-banner-bottom', {
+                loop: true,
+                loopedSlides : 4,
+                nextButton: '.swiper-button-next',
+                prevButton: '.swiper-button-prev',
+            });
+            var swiperB1 = new Swiper('.swiper-b1', {
+                effect : 'coverflow',
+                slidesPerView: 1.2,
+                centeredSlides: true,
+                loop: true,
+                coverflow: {
+                    rotate: 0,
+                    stretch: -12,
+                    depth: 60,
+                    modifier: 5,
+                    slideShadows : false
+                }
+            });
+            $(".b2-content .ul-nav li").click(function () {
+                $(".b2-content .ul-nav li").removeClass("active");
+                $(this).addClass("active");
+                $(".b2-content .ul-content ul").eq($(this).index()).fadeIn().siblings().hide();
+            })
+        })
+    </script>
+    <footer>
+        <div class="footer">
+            <p>
+                全球指数控股有限公司一家在新西兰注册的公司，受新西兰金融服务商注册处 (FSP) 授权及监管(注册号：123456789)。
+                <br/>
+                作为全球知名的金融服务供应商，Globalidx在全球多个国家和地区受到监管，并得到全球客户极大的认可。Globalidx的客户资金全部存放在全球顶级资信的第三方银行金融机构，并有高额保险进行保障，确保客户资金的安全性。此外，Globalidx绝不会代替客户直接进行任何形式的理财投资行为。
+                <br/>
+                本网站上的信息不适用于澳大利亚、比利时、加拿大、日本、新加坡和美国的居民，也不适用于那些使用本信息违反当地法律法规的居民。
+                <br/><br/>© 2018 年Globalidx - 保留所有权利。
+                <br/><br/>
+                <span class="link-span">
+                    友情链接：
+                    <a href="javascript:">华尔街见闻</a>
+                    <a href="javascript:">新浪网</a>
+                    <a href="javascript:">腾讯网</a>
+                    <a href="javascript:">凤凰网</a>
+                </span>
+                <i class="skynet-i"></i>
+            </p>
+            <img src="./images/logo.png" alt="">
+        </div>
+        <div class="footer-fixed">
+            <ul class="clearfix">
+                <li class="footer-li1">
+                    <a href="">
+                        <i></i>
+                        软件下载
+                    </a>
+                </li>
+                <li class="footer-li2">
+                    <a href="">
+                        <i></i>
+                        开立账户
+                    </a>
+                </li>
+                <li class="footer-li3">
+                    <a href="">
+                        <i></i>
+                        在线客服
+                        <div class="wave">  
+                            <div class="circle"></div>  
+                            <div class="circle"></div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
